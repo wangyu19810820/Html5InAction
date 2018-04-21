@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function show() {
+            const modal = document.querySelector('dialog');
+            modal.showModal();
+        }
+
+        
+        function close1() {
+            const modal1 = document.querySelector('dialog');
+            modal1.close();
+        }
+    </script>
+</head>
+<body>
+    
+    <button onclick="show()">显示弹出框</button>
+        <!-- dialog 有open属性则显示，没有open属性则隐藏 -->
+        <dialog>
+            <p>老王又有时间可以陪女朋友看电影了</p>
+            <button onclick="close1()">关闭</button>
+        </dialog>
+
+</body>
+</html>

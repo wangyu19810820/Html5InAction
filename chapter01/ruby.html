@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ruby 和 rt 显示东亚字符和注音 -->
+    <p>
+        显示一个汉字：<ruby>漢<rt>ㄏㄢˋ</rt></ruby>
+        这个汉字的的含义可网上搜索
+    </p>
+
+    <!-- 在支持ruby和rt的浏览器中不会显示rp内容。"<rp>(</rp>", "<rp>)</rp>"在现代浏览器中不会显示括号，在旧浏览器中显示漢(ㄏㄢˋ) -->
+    <p>
+        显示一个汉字：<ruby>漢<rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp></ruby>
+        这个汉字的的含义可网上搜索
+    </p>
+
+</body>
+</html>
